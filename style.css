@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #008080; /* classic Windows teal */
+    font-family: "Courier New", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .paint-app {
+    width: 90vw;
+    height: 85vh;
+    background: #c0c0c0;
+    border: 2px solid #000;
+    box-shadow: 0 0 0 3px #808080;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Title bar */
+  .title-bar {
+    background: linear-gradient(to right, #000080, #0000cd);
+    color: white;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title-buttons .btn {
+    background: #c0c0c0;
+    border: 1px solid #000;
+    margin-left: 3px;
+    padding: 0 4px;
+    cursor: pointer;
+  }
+  
+  /* Toolbar */
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #404040;
+    border-right: 2px solid #404040;
+    background: #c0c0c0;
+  }
+  
+  .toolbar button {
+    padding: 3px 8px;
+    background: #c0c0c0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #404040;
+    border-right: 2px solid #404040;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  
+  .toolbar button:hover {
+    background: #808080;
+  }
+  
+  /* Canvas */
+  #canvas {
+    flex: 1;
+    background: #ffffff;
+    cursor: crosshair;
+  }
+  

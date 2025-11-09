@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>90s Paint App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="paint-app">
+      <div class="title-bar">
+        <span class="title">JS Paint - Untitled</span>
+        <div class="title-buttons">
+          <span class="btn">_</span>
+          <span class="btn">□</span>
+          <span class="btn">X</span>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <label>🎨 Color: </label>
+        <input type="color" id="color-picker" value="#000000" />
+
+        <label>🖌️ Size: </label>
+        <input
+          type="range"
+          id="brush-size"
+          min="1"
+          max="50"
+          value="5"
+        />
+        <span id="brush-size-label">Brush Size: 5</span>
+
+        <button id="pen">Pen</button>
+        <button id="eraser">Eraser</button>
+        <button id="clear-canvas">Clear</button>
+      </div>
+
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
